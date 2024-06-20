@@ -1,0 +1,315 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.dropdown {
+    
+    display: none;
+    position: absolute;
+    background-color: #555 ;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dropdown a:hover {
+    color: orange;
+    background-color: #555;
+}
+.dropdown li {
+    margin: 0;
+}
+
+.dropdown a {
+    padding: 10px 15px;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+
+.nav-menu li:hover .dropdown {
+    display: block;
+}
+
+.nav-icons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+.nav-icons a:hover{
+    color:cyan;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .nav-menu a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 20px;
+    }
+
+    .nav-icons {
+        margin-top: 10px;
+    }
+
+    .nav-icons a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+.background-img{
+    
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.background-gif{
+    padding: 18px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+.goshop > a{
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 10px;
+    margin: 5px 0px 0px;
+    margin-top: 5px;    
+    display: inline-block;
+    
+}
+.goshop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+    background-color: white; 
+}
+.goshop> a:hover{
+    background-color: darkred;
+    text-shadow: 3px;
+    color:cyan;
+    
+}
+.nguoimau{
+    display: flex;
+}
+
+.nguoimau img{
+    max-width: 767px;
+    padding: 15px 0;
+    height: 508px;
+}    
+
+.bestseller{
+    margin: auto;
+    text-align: center;
+    
+}
+.sanpham img.hoverimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.sanpham:hover img.defaultimg {
+    opacity: 0;
+}
+.sanpham:hover img.hoverimg {
+    opacity: 1;
+}
+
+.sanpham img{
+    max-width: 300px;
+    height: auto;
+    transition:0.3s ease;
+}
+.chuyenanh img{
+    max-width: 300px;
+    height: auto;
+    transition:0.3s ease;
+}
+.sanpham{
+    text-align: center;
+    float: left;
+}
+.ten, .gia{
+    margin-top: 10px;
+}
+.chuyenanh{
+    position: relative;
+}
+
+.container img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+
+
+
+.nhapthongtin {
+    background-color: gray;
+    width: 100%;
+    height: 140px;
+    padding: 50px 0;
+    float:left;
+    margin: 50px auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.nhapthongtin h2 {
+    margin: 0 20px 0 0;
+    display: inline-block;
+}
+
+.formthongtin {
+    display: inline-block;
+    text-align: left;
+}
+
+.formthongtin{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formthongtin[type="email"] {
+    margin: 0 10px 0 0;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formthongtin button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formthongtin button:hover {
+    background-color: darkred;
+    color: cyan;
+}
+
+
+
+
+
+
+
+
+
+.footer-article {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    float:left;
+    background-color: #333; 
+    color: white;
+    padding: 50px 20px; 
+    text-align: center;
+    box-sizing: border-box;
+    clear: both; 
+}
+.footer-article .column {
+    width: calc(33.33% - 20px);
+    float: left; 
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.footer-article h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-article p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+ 
+
+
+
+
+
+
